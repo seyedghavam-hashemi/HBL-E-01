@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-footer.css">
+    <link rel="stylesheet" type="text/css" href="style-header.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+     <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- script js -->
+    <script src="code.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+    <title>HBL-E</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row nav flex-parent">
+          <div class="logo">HBL-E</div>
+         <!--  <div class="go-to-main flex-parent"><a class="back"><p class="p-link">Back</p></a></div>-->
+  
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid main-program">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>LOOSE EXTRA WEIGHT WITH 3 CLICK</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 inventory">
+            <h2>Your Inventory</h2>
+           <button id="closeWindow1" class="close1 btn btn-close" type="button" onclick="showSteps()">Close</button>
+           <button id="refresh" class="close1 btn refresh" type="button" onclick="refresh()">Refresh</button>
+          </div>
+        </div>
+        <div class="inventory-parent">
+        <div class="row flex-parent inventory-width">
+          <div class="col-sm-12 photogallery space-around flex-parent">            
+            <img src="images/chocolate.jpg" id="chocolate" class="pics">
+            <img src="images/broccoli.jpg" id="broccoli" class="pics">               
+          </div>
+        </div>
+       </div>
+       <div class="inventory-parent">
+        <div class="row flex-parent inventory-width">
+          <div class="col-sm-12 photogallery space-around flex-parent">            
+            <img src="images/money.jpg" id="money" class="pics">            
+            <img src="images/cover-package.jpg" class="pics" id="package">           
+          </div>
+        </div>
+       </div>
+       <div class="row btns-parent">
+          <div class="col-sm-12 dh3">
+                <h3 class="h3-btn" id="steps">STEPS</h3>
+          </div>
+          <div class="col-sm-12 btns">   
+                <button type="button" class="btn" id="btn-s1" onclick="playVid1(); photoChange1(); hideText1(); hideSteps();">1</button>             
+                <button type="button" class="btn" id="btn-s2" onclick="playVid2(); photoChange2(); hideSteps();">2</button>
+                <button type="button" class="btn" id="btn-s3" onclick="playVid3(); photoChange3(); hideSteps();">3</button>
+                <button type="button" class="btn" id="btn-s4" onclick="playVid4(); photoChange4(); hideSteps();">4</button>
+                
+          </div>          
+     </div>
+<div style="padding: 0;">
+     <!--vid1-->
+        <div class="row vidWindow">
+          <div class="col-sm-12 divVideo">
+              <video style="display: none" id="myVideo1" width="500" height="250">
+                <source src="videos\1.mp4" type="video/mp4">
+                <source src="1.mp4" type="video/ogg">
+                   Your browser does not support HTML5 video.
+            </video><p id="text2" class="p-text">Now, You Need a Friend to Show
+ You How to Eat Healthy Foods.Click on close then on 2</p>
+            
+            <br>
+          </div>  
+          </div>     
+
+          <script> 
+var vid1 = document.getElementById("myVideo1"); 
+
+function playVid1() { 
+  vid1.play(); 
+} 
+</script> 
+
+<script>
+  $(document).ready(function(){
+  $("#btn-s1").click(function(){
+    $("#myVideo1").show( "slow");
+   $("#text2").show( "slow");
+  });
+  $("#closeWindow1").click(function(){
+    $("#myVideo1").hide( "slow");
+    $("#text2").hide( "slow");
+   
+  });
+ 
+  });
+  </script>
+  <script>
+  function photoChange1() {       
+    document.getElementById("chocolate").src = "images/cover-choco.JPG";
+  }
+  </script>
+<script>
+  function hideText1() {       
+    document.getElementById("text1").style.display = "none";
+  }
+  </script>
+  
+<div class=" row" id="text">
+  <div class="col-sm-12"> 
+   <div class="child-text" id="text1"><p class="p-text">First of All You Need a Devoted Friend to
+ Eat Your Harmful Foods Instead of You.
+Click on 1</p></div>
+
+
+   
+ </div>
+</div>
+</div>
+<!--vid1-->
+     <!--vid2-->
+        <div class="row vidWindow">
+          <div class="col-sm-12 divVideo">
+              <video style="display: none" id="myVideo2" width="500" height="250">
+                <source src="videos\2.mp4" type="video/mp4">
+                <source src="2.mp4" type="video/ogg">
+                   Your browser does not support HTML5 video.
+            </video><p class="p-text" id="text3">You Have to Hire a Couch
+ to Teach You How to Exercise.
+Click on close then 2.</p>
+            
+            
+          </div> 
+          </div>         
+          <script> 
+var vid2 = document.getElementById("myVideo2"); 
+
+function playVid2() { 
+  vid2.play(); 
+} 
+</script> 
+
+<script>
+  $(document).ready(function(){
+  $("#btn-s2").click(function(){
+    $("#myVideo2").show( "slow");
+   $("#text3").show( "slow");
+  });
+  $("#closeWindow1").click(function(){
+    $("#myVideo2").hide( "slow");
+    $("#text3").hide( "slow");
+   
+  });
+ 
+  });
+  </script>
+  <script>
+  function photoChange2() {       
+    document.getElementById("broccoli").src = "images/cover-broccoli.JPG";
+  }
+  </script>
+
+  
+
+
+<!--vid2-->
+
+     <!--vid3-->
+        <div class="row vidWindow">
+          <div class="col-sm-12 divVideo">
+              <video style="display: none" id="myVideo3" width="500" height="250">
+                <source src="videos\3.mp4" type="video/mp4">
+                <source src="3.mp4" type="video/ogg">
+                   Your browser does not support HTML5 video.
+            </video><p class="p-text" id="text4">Don’t Be Upset Because Your Inventory Is Empty Now. 
+Instead You Have Won Our 
+Fully Automatic Refrigerator Cleaner Package.
+Click on close then 4 to Receive It.</p>
+            
+            <br>
+          </div> 
+          </div>         
+          <script> 
+var vid3 = document.getElementById("myVideo3"); 
+
+function playVid3() { 
+  vid3.play(); 
+} 
+</script> 
+
+<script>
+  $(document).ready(function(){
+  $("#btn-s3").click(function(){
+    $("#myVideo3").show( "slow");
+   $("#text4").show( "slow");
+  });
+  $("#closeWindow1").click(function(){
+    $("#myVideo3").hide( "slow");
+    $("#text4").hide( "slow");
+   
+  });
+ 
+  });
+  </script>
+  <script>
+  function photoChange3() {       
+    document.getElementById("money").src = "images/cover-money.JPG";
+  }
+  </script>
+
+  
+
+
+<!--vid3-->
+
+<!--vid4-->
+        <div class="row vidWindow">
+          <div class="col-sm-12 divVideo">
+              <video style="display: none" id="myVideo4" width="500" height="250">
+                <source src="videos\4.mp4" type="video/mp4">
+                <source src="4.mp4" type="video/ogg">
+                   Your browser does not support HTML5 video.
+            </video>
+            
+            <br>
+          </div>  
+          </div>        
+          <script> 
+var vid4 = document.getElementById("myVideo4"); 
+
+function playVid4() { 
+  vid4.play(); 
+} 
+</script> 
+
+<script>
+  $(document).ready(function(){
+  $("#btn-s4").click(function(){
+    $("#myVideo4").show( "slow");
+  
+  });
+  $("#closeWindow1").click(function(){
+    $("#myVideo4").hide( "slow");
+    
+   
+  });
+ 
+  });
+  </script>
+  <script>
+  function photoChange4() {       
+    document.getElementById("package").src = "images/package.jpg";
+  }
+  </script>
+
+  
+
+
+<!--vid4-->
+
+<!--Steps Show/Hide-->
+<script>
+  function hideSteps() {       
+    document.getElementById("steps").style.color = "rgba(52, 152, 219, 1)";
+  }
+
+   function showSteps() {       
+    document.getElementById("steps").style.color = "#ffffff";
+  }
+  </script>
+
+  <script>
+    function refresh() {
+      document.getElementById("chocolate").src = "images/chocolate.jpg";
+
+document.getElementById("broccoli").src = "images/broccoli.jpg";
+
+document.getElementById("money").src = "images/money.jpg";
+document.getElementById("package").src = "images/cover-package.jpg";
+
+
+
+    }
+  </script>
+
+<!--Steps Show/Hide-->
+</div>
+
+
+<div class="container-fluid footer-position">
+        <div class="row">
+    <div class="viewport flex-parent flex-col">
+      <div class="footer flex-parent">
+        <div class="card-size col-sm-12 col-md-4" id="h">  
+          <img src="images/Hossein.jpg" alt="Hossein" class="image-creator">    
+          <div class="desc">SeyedHossein Hashemi</div>
+               </div>
+        <div class="middle-footer-area col-sm-12 col-md-4" id="t">
+<p class="p-footer">We Hope you Have Enjoyed. It Will Make Us Grateful If You Share Your Opinions About Our Work On Our Facebook Page Under The Post:<br>
+
+<!--<i class="fa fa-envelope-square" style="font-size:48px;color:red"><a href="#"></a></i>-->
+<i class="fa fa-facebook-square" style="font-size:48px;color:red"><a href="https://www.facebook.com/seyedghavam.hashemi.5"></a></i></p>
+        </div>
+        <div class="card-size col-sm-12 col-md-4" id="g">
+          <img src="images/Ghavam.jpg" alt="Ghavam" class="image-creator">    
+          <div class="desc">SeyedGhavam Hashemi</div>
+
+        </div>  
+      </div>
+    </div>
+  </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
