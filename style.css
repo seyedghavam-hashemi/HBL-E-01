@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-  font-family: sans-serif;
+  font-family: 'Roboto';
   font-size: 6vh;
   color: var(--font-color);
   text-align: center;
@@ -86,7 +86,7 @@ h3 {
 }
 
 .p-text{
-  font-family: sans-serif;
+  font-family: 'Roboto';
   font-size: 3vh;
   color: var(--font-color);  
   display: flex;
