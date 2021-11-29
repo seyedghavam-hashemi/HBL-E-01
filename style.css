@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: cursive, 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -378,7 +378,7 @@ height: 25vh;
 
  #text1{  
 
-  top:-450% ;
+  top:-320% ;
   font-size: 2.5vh;
 }
 
@@ -386,21 +386,21 @@ height: 25vh;
 
 #myVideo1{
   
-  top: -450%;
+  top: -150%;
   left: -5%;
   
 }
 
 #myVideo2{
   
-  top: -450%;
+  top: -250%;
   left: -5%;
   
 }
 
 #myVideo3{
 
-  top: -450%;
+  top: -350%;
   left: -5%;
 
 
@@ -496,7 +496,7 @@ left: 2%;
 
  #text1{  
 
-  top:-450% ;
+  top:-320% ;
   font-size: 2.5vh;
 }
 
@@ -504,21 +504,21 @@ left: 2%;
 
 #myVideo1{
   
-  top: -450%;
+  top: -150%;
   left: -5%;
   
 }
 
 #myVideo2{
   
-  top: -450%;
+  top: -250%;
   left: -5%;
   
 }
 
 #myVideo3{
 
-  top: -450%;
+  top: -350%;
   left: -5%;
 
 
@@ -634,21 +634,21 @@ left: 2%;
 
 #myVideo1{
   
-  top: -450%;
+  top: -150%;
   left: -23%;
   
 }
 
 #myVideo2{
   
-  top: -450%;
+  top: -250%;
   left: -20%;
   
 }
 
 #myVideo3{
 
-  top: -450%;
+  top: -365%;
   left: -23%;
 
 
@@ -714,21 +714,21 @@ left: 2%;
 
 #myVideo1{
   
-  top: -450%;
+  top: -150%;
   left: -30%;
   
 }
 
 #myVideo2{
   
-  top: -450%;
+  top: -250%;
   left: -30%;
   
 }
 
 #myVideo3{
 
-  top: -450%;
+  top: -365%;
   left: -35%;
 
 
@@ -818,21 +818,21 @@ left: 2%;
 
 #myVideo1{
   
-  top: -470%;
+  top: -150%;
   left: -35%;
   
 }
 
 #myVideo2{
   
-  top: -470%;
+  top: -250%;
   left: -35%;
   
 }
 
 #myVideo3{
 
-  top: -470%;
+  top: -380%;
   left: -35%;
 
 
@@ -958,21 +958,21 @@ left: 2%;
 }
 #myVideo1{
   
-  top: -450%;
+  top: -145%;
   left: -45%;
   
 }
 
 #myVideo2{
   
-  top: -450%;
+  top: -250%;
   left: -45%;
   
 }
 
 #myVideo3{
 
-  top: -450%;
+  top: -350%;
   left: -45%;
 
 
@@ -1056,21 +1056,21 @@ left: 2%;
 
 #myVideo1{
   
-  top: -450%;
+  top: -150%;
   left: -65%;
   
 }
 
 #myVideo2{
   
-  top: -450%;
+  top: -250%;
   left: -65%;
   
 }
 
 #myVideo3{
 
-  top: -450%;
+  top: -350%;
   left: -65%;
 
 
